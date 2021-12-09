@@ -1,0 +1,288 @@
+// main-classes
+
+// --------------------------------------------------------------------------------- > header
+
+// --------------------------------------------------------------------------------- > logo
+
+.logo-img {
+    width: 166px;
+    height: 79px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @media (max-width: 1200px) {
+        width: 128px;
+        height: 61px;
+    }
+    @media (max-width: 992px) {
+        width: 116px;
+        height: 55px;
+    }
+    @media (max-width: 768px) {
+        width: 108px;
+        height: 51px;
+    }
+    @media (max-width: 576px) {
+        width: 102px;
+        height: 50px;
+    }
+}
+
+// --------------------------------------------------------------------------------- > search
+
+.search-input {
+    width: 316px;
+    height: 40px;
+    padding-left: 5px;
+    padding-right: 45px;
+    background: #f4f4f4;
+    border: 1px solid #ccc6c6;
+    border-radius: 2px;
+    outline: none;
+    @media (max-width: 1200px) {
+        width: 242px;
+        height: 36px;
+        padding-right: 41px;
+    }
+}
+
+.search-submit {
+    position: relative;
+    left: -44px;
+    width: 40px;
+    height: 40px;
+    background: #dec1a0;
+    border-radius: 0px 2px 2px 0px;
+    border: none;
+    background-image: url(../images/magnifier.png);
+    background-position: center;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    outline: none;
+    &:hover {
+        cursor: pointer;
+    }
+    @media (max-width: 1200px) {
+        left: -37px;
+        width: 33.25px;
+        height: 36px;
+    }
+}
+
+// --------------------------------------------------------------------------------- > social
+
+.social {
+    li {
+        display: inline-block;
+    }
+}
+
+.social-elem {
+    width: 26px;
+    height: 26px;
+    margin: 0 4px;
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @media (max-width: 1200px) {
+        width: 22px;
+        height: 22px;
+        margin: 0 2px;
+    }
+}
+
+.social-elem__instagram {
+    background-image: url(../images/instagram.png);
+}
+
+.social-elem__viber {
+    background-image: url(../images/viber.png);
+}
+
+.social-elem__whatsapp {
+    background-image: url(../images/whatsapp.png);
+}
+
+.social-elem__telegram {
+    background-image: url(../images/telegram.png);
+}
+
+.social-elem__vk {
+    background-image: url(../images/vk.png);
+}
+
+// --------------------------------------------------------------------------------- > contacts
+
+.contacts {
+    text-align: right;
+}
+
+.contacts-elem {
+    margin-bottom: 5px;
+}
+
+// --------------------------------------------------------------------------------- > search-btn, contacts-btn
+
+.search-btn,
+.contacts-btn {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &:hover {
+        cursor: pointer;
+    }
+    @media (max-width: 576px) {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.search-btn {
+    background-image: url(../images/search-btn.png);
+}
+
+.contacts-btn {
+    background-image: url(../images/contacts-btn.png);
+}
+
+// --------------------------------------------------------------------------------- > btn
+
+.btn-submit {
+    width: 221px;
+    height: 50px;
+    border: 2px solid #987c66;
+    border-radius: 2px;
+    background-color: inherit;
+    font-family: "Gilroy-Bold";
+    font-size: 15px;
+    line-height: 19px;
+    color: #987c66;
+    &:hover {
+        cursor: pointer;
+    }
+    @media (max-width: 1200px) {
+        width: 183px;
+        height: 45px;
+    }
+}
+
+// --------------------------------------------------------------------------------- > menu-btn
+
+.menu-btn {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/menu-btn.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+// --------------------------------------------------------------------------------- > black-screen
+
+.black-screen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background: rgba(69, 72, 74, 0.6);
+    backdrop-filter: blur(7px);
+}
+
+// --------------------------------------------------------------------------------- > to-close-btn
+
+.to-close-btn {
+    position: relative;
+    float: right;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/to-close-btn.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    @media (max-width: 576px) {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+// --------------------------------------------------------------------------------- > nav
+
+.nav {
+    margin-bottom: -15px;
+}
+
+.nav-list-elem {
+    position: relative;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-family: "Gilroy-Bold";
+    font-size: 17px;
+    line-height: 21px;
+    color: #2d3236;
+    &:hover {
+        text-decoration: underline;
+    }
+    @media (max-width: 1200px) {
+        margin-right: 32px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.nav-indicator::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 7.5px;
+    top: 44%;
+    right: -20px;
+    background-image: url("../images/nav-indicator.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (max-width: 1200px) {
+        top: 40%;
+    }
+}
+
+.nav-sub {
+    display: none;
+    position: absolute;
+    width: max-content;
+    max-width: 320px;
+    padding: 20px;
+    margin-bottom: -7px;
+    z-index: 3;
+    font-family: "Gilroy-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 120%;
+    color: #45484a;
+    background: #fff;
+    box-shadow: 0px 5px 20px rgba(119, 134, 148, 0.25);
+}
+
+.nav-sub-elem {
+    margin-bottom: 7px;
+    a:hover {
+        border-bottom: 1px solid #c0a484;
+    }
+}
+
+.nav-list-elem a:hover + .nav-sub,
+.nav-sub:hover {
+    display: block;
+}
