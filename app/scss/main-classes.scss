@@ -186,7 +186,7 @@
 // --------------------------------------------------------------------------------- > black-screen
 
 .black-screen {
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
@@ -231,7 +231,7 @@
     font-size: 17px;
     line-height: 21px;
     color: #2d3236;
-    &:hover {
+    a:hover {
         text-decoration: underline;
     }
     @media (max-width: 1200px) {
@@ -278,6 +278,7 @@
 .nav-sub-elem {
     margin-bottom: 7px;
     a:hover {
+        text-decoration: none;
         border-bottom: 1px solid #c0a484;
     }
 }
@@ -285,4 +286,12 @@
 .nav-list-elem a:hover + .nav-sub,
 .nav-sub:hover {
     display: block;
+}
+
+.nav-list-elem:hover::after {
+    display: none;
+}
+
+.clear-both {
+    clear: both;
 }

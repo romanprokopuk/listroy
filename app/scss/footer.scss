@@ -1,0 +1,85 @@
+// footer
+
+// --------------------------------------------------------------------------------- > footer
+
+.footer {
+    background: #e8e2dc;
+    padding-top: 37px;
+    padding-bottom: 22px;
+    @media (max-width: 992px) {
+        padding-top: 32px;
+    }
+    @media (max-width: 576px) {
+        padding-bottom: 19px;
+    }
+}
+
+.nav__footer {
+    width: 80%;
+    float: left;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2d3236;
+    @media (max-width: 1200px) {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    @media (max-width: 992px) {
+        width: 70%;
+    }
+    @media (max-width: 768px) {
+        width: 60%;
+    }
+    @media (max-width: 576px) {
+        width: 100%;
+    }
+}
+
+.nav-list-elem__footer {
+    margin-right: auto;
+    margin-bottom: 12px;
+    min-width: 32%;
+    float: left;
+    &:nth-child(3n+1) {
+        clear: both;
+    }
+    @media (max-width: 1200px) {
+        margin-bottom: 10px;
+    }
+    @media (max-width: 992px) {
+        min-width: 50%;
+        &:nth-child(3n+1) {
+            clear: none;
+        }
+        &:nth-child(2n+1) {
+            clear: both;
+        }
+    }
+    @media (max-width: 768px) {
+        &:nth-child(n+1) {
+            width: 100%;
+            clear: both;
+        }
+    }
+    @media (max-width: 576px) {
+        text-align: center;
+    }
+}
+
+.footer-contacts {
+    width: 20%;
+    margin-left: 80%;
+    @media (max-width: 992px) {
+        width: 30%;
+        margin-left: 70%;
+    }
+    @media (max-width: 768px) {
+        width: 40%;
+        margin-left: 60%;
+    }
+    @media (max-width: 576px) {
+        clear: both;
+        width: 100%;
+        margin-left: 0;
+    }
+}
