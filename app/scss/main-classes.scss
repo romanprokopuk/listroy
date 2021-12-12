@@ -30,6 +30,10 @@
 
 // --------------------------------------------------------------------------------- > search
 
+.search {
+    position: relative;
+}
+
 .search-input {
     width: 316px;
     height: 40px;
@@ -47,8 +51,8 @@
 }
 
 .search-submit {
-    position: relative;
-    left: -44px;
+    position: absolute;
+    right: 0;
     width: 40px;
     height: 40px;
     background: #dec1a0;
@@ -63,7 +67,6 @@
         cursor: pointer;
     }
     @media (max-width: 1200px) {
-        left: -37px;
         width: 33.25px;
         height: 36px;
     }
