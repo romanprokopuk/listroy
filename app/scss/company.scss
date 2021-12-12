@@ -1,0 +1,52 @@
+// company
+
+// --------------------------------------------------------------------------------- > company
+
+.company-img {
+    width: 100%;
+    min-height: 650px;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.company-contant-wrap {
+    height: 100%;
+}
+
+// --------------------------------------------------------------------------------- > company-contant
+
+.company-contant {
+    position: relative;
+    top: 40%;
+}
+
+.btn__company {
+    margin-top: 50px;
+    @media (max-width: 992px) {
+        margin-top: 25px;
+    }
+    @media (max-width: 768px) {
+        margin-top: 17px;
+    }
+}
+
+.btn-submit__company {
+    width: 302px;
+    border: none;
+    background-color: #987c66;
+    font-size: 17px;
+    line-height: 21px;
+    color: #fff;
+    @media (max-width: 992px) {
+        width: 238px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    @media (max-width: 768px) {
+        width: 209px;
+        font-size: 15px;
+        line-height: 19px;
+    }
+}

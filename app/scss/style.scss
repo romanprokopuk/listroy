@@ -196,14 +196,12 @@ a {
     }
 }
 
-.mainheight {
-    height: 100vh;
-}
-
 // --------------------------------------------------------------------------------- @import styles
 
 @import "fonts";
 @import "main-classes";
 @import "header";
+@import "company";
+@import "about-company";
 
 @import "footer";
