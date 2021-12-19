@@ -360,6 +360,43 @@
     }
 }
 
+// --------------------------------------------------------------------------------- >text
+
+.text {
+    p,
+    ul,
+    ol,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 27px;
+        @media (max-width: 1200px) {
+            margin-top: 20px;
+        }
+        @media (max-width: 576px) {
+            margin-top: 15px;
+        }
+    }
+
+    ul {
+        list-style: disc inside;
+    }
+
+    ol {
+        list-style: decimal inside;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Gilroy-Bold";
+    }
+}
+
 // --------------------------------------------------------------------------------- >heading
 
 .heading {
@@ -417,39 +454,21 @@
     }
 }
 
-// --------------------------------------------------------------------------------- >text
+// --------------------------------------------------------------------------------- >sub-heading
 
-.text {
-    p,
-    ul,
-    ol,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        margin-top: 27px;
-        @media (max-width: 1200px) {
-            margin-top: 20px;
-        }
-        @media (max-width: 576px) {
-            margin-top: 15px;
-        }
+.sub-heading {
+    font-family: "Gilroy-Bold";
+    font-size: 18px;
+    color: #2d3236;
+    text-transform: uppercase;
+    text-align: center;
+    & a:hover {
+        text-decoration: underline;
     }
-
-    ul {
-        list-style: disc inside;
+    @media (max-width: 992px) {
+        font-size: 17px;
     }
-
-    ol {
-        list-style: decimal inside;
-    }
-
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Gilroy-Bold";
+    @media (max-width: 768px) {
+        font-size: 16px;
     }
 }
