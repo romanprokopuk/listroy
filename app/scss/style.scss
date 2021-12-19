@@ -190,9 +190,7 @@ a {
         width: 540px;
     }
     @media (max-width: 576px) {
-        // min-width: 320px;
         width: 320px;
-        // width: 100%;
     }
 }
 
@@ -204,5 +202,6 @@ a {
 @import "company";
 @import "about-company";
 @import "services";
+@import "callback";
 
 @import "footer";
