@@ -416,38 +416,43 @@
         <section class="callback">
             <div class="container container__callback">
                 <div class="callback-contant">
-                    <div class="callback-form">
-                        <span class="callback-heading">Заказать звонок</span>
-                        <form action="#" autocomplete="on">
-                            <div class="callback-form-name">
-                                <span>Ваше Имя/Имя и Отчество</span>
-                                <div class="callback-form-input callback-form-input__name">
-                                    <input type="text" name="name" required="">
+                    <div class="form">
+                        <span class="form-heading">Заказать звонок</span>
+                        <form class="form-wrap" action="#" autocomplete="on">
+                            <div class="form-field-wrap">
+                                <div class="form-field">
+                                    <span class="form-field-heading">Ваше Имя/Имя и Отчество</span>
+                                    <div class="form-field-input">
+                                        <input type="text" name="name" required="">
+                                    </div>
+                                </div>
+                                <div class="form-field">
+                                    <span class="form-field-heading">Ваш номер телефона для связи</span>
+                                    <div class="form-field-input">
+                                        <input type="tel" name="telephone" required="">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="callback-form-phone-number">
-                                <span>Ваш номер телефона для связи</span>
-                                <div class="callback-form-input callback-form-input__phone-number">
-                                    <input type="tel" name="telephone" required="">
-                                </div>
+                            <div class="form-submit">
+                                <input class="btn-submit btn-submit__form" type="submit" value="Отправить"
+                                    title="Отправить запрос на обратный звонок">
                             </div>
-                            <div class="callback-result"></div>
-                            <input class="main-input main-input__callback-form" type="submit" value="Заказать звонок">
                         </form>
                     </div>
-                    <div class="contacts">
+                    <div class="separator"></div>
+                    <div class="contacts contacts__callback">
                         <ul>
                             <li>
-                                <a class="contacts-elem" href="tel:+375293555192" title="Позвонить на телефон">+375 29
+                                <a class="contacts-elem contacts-elem__callback-phone" href="tel:+375293555192" title="Позвонить на телефон">+375 29
                                     355 51 92</a>
                             </li>
                             <li>
-                                <a class="contacts-elem" href="mailto:li_stroy@bk.ru"
+                                <a class="contacts-elem contacts-elem__callback-mail" href="mailto:li_stroy@bk.ru"
                                     title="Написать на e-mail">li_stroy@bk.ru</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="social">
+                    <div class="social social__callback">
                         <ul>
                             <li>
                                 <a class="social-elem social-elem__instagram" href="" title="Мы в Instagram"></a>

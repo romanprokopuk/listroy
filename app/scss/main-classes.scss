@@ -37,12 +37,16 @@
 .search-input {
     width: 316px;
     height: 40px;
-    padding-left: 5px;
+    padding-left: 12px;
     padding-right: 45px;
     background: #f4f4f4;
     border: 1px solid #ccc6c6;
     border-radius: 2px;
     outline: none;
+    font-family: "Gilroy-Regular";
+    font-size: 15px;
+    line-height: 18px;
+    color: #45484a;
     @media (max-width: 1200px) {
         width: 242px;
         height: 36px;
@@ -119,6 +123,10 @@
 
 .contacts {
     text-align: right;
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+    line-height: 20px;
+    color: #45484a;
 }
 
 .contacts-elem {
@@ -470,5 +478,74 @@
     }
     @media (max-width: 768px) {
         font-size: 16px;
+    }
+}
+
+// --------------------------------------------------------------------------------- > form
+
+.form-heading {
+    display: block;
+    font-family: "Gilroy-Bold";
+    font-size: 22px;
+    line-height: 27px;
+    @media (max-width: 768px) {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    @media (max-width: 576px) {
+        text-align: center;
+    }
+}
+
+.form-wrap {
+    margin-top: 36px;
+    @media (max-width: 1200px) {
+        margin-top: 30px;
+    }
+}
+
+.form-field-wrap {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 768px) and (min-width: 575.999999px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.form-field {
+    margin-bottom: 20px;
+    @media (max-width: 768px) and (min-width: 575.999999px) {
+        width: 240px;
+    }
+}
+
+.form-field-heading {
+    font-family: "Gilroy-Regular";
+    font-size: 14px;
+    line-height: 18px;
+    color: #6d6d6d;
+}
+
+.form-field-input {
+    & input {
+        width: 100%;
+        height: 40px;
+        padding: 0 12px;
+        background-color: #fff;
+        border: 1px solid #e3e3e3;
+        outline: none;
+        font-family: "Gilroy-Regular";
+        font-size: 14px;
+        line-height: 18px;
+        color: #6d6d6d;
+    }
+}
+
+.form-submit {
+    margin-top: 14px;
+    width: 100%;
+    @media (max-width: 1200px) {
+        margin-top: 6px;
     }
 }

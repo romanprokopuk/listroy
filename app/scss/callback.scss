@@ -24,6 +24,7 @@
 }
 
 .callback-contant {
+    position: relative;
     flex-grow: 1;
     padding: 37px 34px;
     background-color: #f4f4f4;
@@ -32,6 +33,7 @@
     }
     @media (max-width: 768px) {
         padding: 0;
+        padding-bottom: 33px;
     }
 }
 
@@ -59,4 +61,87 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.btn-submit__form {
+    display: block;
+    width: 100%;
+    color: #fff;
+    background-color: #c0a484;
+    border: none;
+    @media (max-width: 768px) and (min-width: 575.999999px) {
+        width: 260px;
+        margin: 0 auto;
+    }
+}
+
+.separator {
+    width: 198px;
+    height: 1px;
+    margin-top: 39px;
+    background-color: #d9d4d0;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 1200px) {
+        margin-top: 33px;
+    }
+    @media (max-width: 576px) {
+        margin-top: 27px;
+    }
+}
+
+.contacts__callback {
+    position: relative;
+    text-align: left;
+    margin-top: 36px;
+    color: #6d6d6d;
+    & :nth-child(n + 2) {
+        margin-top: 13px;
+    }
+    & .contacts-elem {
+        margin-left: 27px;
+    }
+    & .contacts-elem::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 0;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    @media (max-width: 1200px) {
+        margin-top: 29px;
+    }
+}
+
+.contacts-elem__callback-phone::before {
+    background-image: url(../images/phone-portable-menu.png);
+}
+
+.contacts-elem__callback-mail::before {
+    width: 20px !important;
+    background-image: url(../images/mail-portable-menu.png);
+}
+
+.social__callback {
+    margin-top: 30px;
+    & .social-elem {
+        margin: 0;
+        margin-right: 10px;
+        @media (max-width: 768px) and (min-width: 575.999999px) {
+            margin-right: 0;
+            margin-left: 10px;
+        }
+    }
+    @media (max-width: 1200px) {
+        margin-top: 23px;
+    }
+    @media (max-width: 768px) and (min-width: 575.999999px) {
+        margin-top: 0;
+        position: absolute;
+        right: 0;
+        bottom: 33px;
+    }
 }
