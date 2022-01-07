@@ -1,0 +1,115 @@
+// rent-contant
+
+// --------------------------------------------------------------------------------- > rent-contant
+
+.rent-contant {
+    margin-top: 45px;
+    @media (max-width: 1200px) {
+        margin-top: 30px;
+    }
+    @media (max-width: 768px) {
+        margin-top: 20px;
+    }
+}
+
+.rent-contant-wrap {
+    position: relative;
+}
+
+.filter-wrap {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 0;
+    background-color: #f8f8f8;
+    @media (max-width: 1200px) {
+        width: 30%;
+    }
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+
+.equipment-wrap {
+    padding-left: 12px;
+    position: relative;
+    width: 75%;
+    margin-left: 25%;
+    @media (max-width: 1200px) {
+        width: 70%;
+        margin-left: 30%;
+    }
+    @media (max-width: 992px) {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+.btn__filter {
+    display: none;
+    float: left;
+    width: 133px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    background-color: #987c66;
+    @media (max-width: 992px) {
+        display: flex;
+    }
+    @media (max-width: 768px) {
+        width: 103px;
+    }
+    @media (max-width: 576px) {
+        float: none;
+        height: 32px;
+    }
+}
+
+.sort-heading__equipment {
+    @media (max-width: 992px) {
+        margin-left: 36px;
+    }
+    @media (max-width: 768px) {
+        margin-left: 25px;
+    }
+    @media (max-width: 576px) {
+        margin-left: 0;
+    }
+}
+
+.sort__equipment {
+    @media (max-width: 992px) {
+        padding-top: 12px;
+    }
+    @media (max-width: 576px) {
+        padding-top: 17px;
+    }
+}
+
+.sort-elem__equipment {
+    @media (max-width: 576px) {
+        margin-top: 3px;
+    }
+}
+
+.equipment {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.equipment-elem {
+    display: block;
+    padding: 10px;
+    border: 1px solid #d9d4d0;
+    & * {
+        width: 100%;
+    }
+}
+
+.btn__equipment {
+    width: 168px;
+    height: 36px;
+    margin: 0 auto;
+}

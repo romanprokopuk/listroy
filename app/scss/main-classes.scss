@@ -161,6 +161,30 @@
 
 // --------------------------------------------------------------------------------- > btn
 
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 221px;
+    height: 50px;
+    border: 2px solid #987c66;
+    border-radius: 2px;
+    background-color: inherit;
+    font-family: "Gilroy-Bold";
+    font-size: 15px;
+    line-height: 19px;
+    color: #987c66;
+    &:hover {
+        cursor: pointer;
+    }
+    @media (max-width: 1200px) {
+        width: 183px;
+        height: 45px;
+    }
+}
+
+// --------------------------------------------------------------------------------- > btn-submit
+
 .btn-submit {
     width: 221px;
     height: 50px;
@@ -277,8 +301,6 @@
     margin-bottom: -7px;
     z-index: 3;
     font-family: "Gilroy-Regular";
-    font-style: normal;
-    font-weight: normal;
     font-size: 15px;
     line-height: 120%;
     color: #45484a;
@@ -547,5 +569,96 @@
     width: 100%;
     @media (max-width: 1200px) {
         margin-top: 6px;
+    }
+}
+
+// --------------------------------------------------------------------------------- > breadcrumbs
+
+.breadcrumbs {
+    padding-top: 198px;
+    @media (max-width: 1200px) {
+        padding-top: 178px;
+    }
+    @media (max-width: 992px) {
+        padding-top: 85px;
+    }
+}
+
+.breadcrumbs-list {
+    margin-top: 20px;
+    font-family: "Gilroy-Regular";
+    font-size: 14px;
+    line-height: 17px;
+    color: #6d6d6d;
+    @media (max-width: 992px) {
+        margin-top: 16px;
+    }
+    @media (max-width: 576px) {
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+.breadcrumbs-elem {
+    display: inline-block;
+    & a:hover {
+        text-decoration: underline;
+    }
+}
+
+.breadcrumbs-elem:nth-child(n + 2)::before {
+    content: ">";
+    display: inline-block;
+    position: relative;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+// --------------------------------------------------------------------------------- > sort
+
+.sort-heading {
+    float: left;
+    font-family: "Gilroy-Bold";
+    font-size: 14px;
+    line-height: 18px;
+    color: #2d3236;
+    @media (max-width: 576px)  {
+        float: none;
+    }
+}
+
+.sort-elem {
+    position: relative;
+    display: inline-block;
+    margin-left: 25px;
+    font-family: "Gilroy-Regular";
+    font-size: 14px;
+    line-height: 18px;
+    color: #6d6d6d;
+
+    //переделать при нажатии (активная) + стрелка вверх/вниз
+    &:active {
+        color: #987c66;
+    }
+
+    &:active::before {
+        position: absolute;
+        width: 10px;
+        height: 13px;
+        right: -15px;
+        top: 3px;
+        background-image: url("../images/sort-arrow.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+    }
+
+    &:nth-child(1) {
+        margin-left: 10px;
+        @media (max-width: 576px) {
+            margin-left: 0;
+        }
     }
 }

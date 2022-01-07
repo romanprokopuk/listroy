@@ -11,36 +11,64 @@
     }
 }
 
+.heading__benefits {
+    @media (max-width: 768px) {
+        font-size: 21px;
+    }
+}
+
 .benefits-contant {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
+    margin-top: 60px;
+    font-family: "Gilroy-Bold";
+    font-size: 18px;
+    line-height: 23px;
+    color: #2d3236;
+    @media (max-width: 992px) {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+        line-height: 20px;
+    }
+    @media (max-width: 576px) {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+        text-align: center;
+    }
 }
 
 .benefits-contant-img {
-    width: 60px;
-    height: 40px;
-    background-position: center;
+    width: 80px;
+    height: 60px;
+    background-position: bottom left;
     background-size: contain;
     background-repeat: no-repeat;
+    @media (max-width: 576px) {
+        margin: 0 auto;
+    }
 }
 
 .benefits-contant-img__warranty {
-    background-image: url('../images/expenses.png');
+    background-image: url("../images/warranty.png");
 }
 
 .benefits-contant-img__supervision {
-    background-image: url('../images/expenses.png');
+    background-image: url("../images/supervision.png");
 }
 
 .benefits-contant-img__bonuses {
-    background-image: url('../images/expenses.png');
+    background-image: url("../images/bonuses.png");
 }
 
 .benefits-contant-img__expenses {
-    background-image: url('../images/expenses.png');
+    background-image: url("../images/expenses.png");
 }
 
 .benefits-contant-img__cleaning {
-    background-image: url('../images/expenses.png');
+    background-image: url("../images/cleaning.png");
 }
