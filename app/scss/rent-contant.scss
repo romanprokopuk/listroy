@@ -40,11 +40,22 @@
         width: 50vw;
         top: 0;
         z-index: 3;
-        padding-top: 15px;
+        padding-top: 67px;
         padding-bottom: 15px;
+        overflow-y: auto;
     }
     @media (max-width: 768px) {
         width: 100vw;
+    }
+}
+
+.to-close-btn__filter {
+    display: none;
+    width: 18px;
+    height: 18px;
+    @media (max-width: 992px) {
+        top: -52px;
+        display: block;
     }
 }
 
@@ -180,7 +191,8 @@
     color: #2d3236;
 }
 
-.btn__equipment {
+.btn__equipment,
+.btn__filter-off {
     width: 168px;
     height: 36px;
     margin: 0 auto;
