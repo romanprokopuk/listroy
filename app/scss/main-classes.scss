@@ -401,10 +401,7 @@
     h4,
     h5,
     h6 {
-        margin-top: 27px;
-        @media (max-width: 1200px) {
-            margin-top: 20px;
-        }
+        margin-top: 20px;
         @media (max-width: 576px) {
             margin-top: 15px;
         }
@@ -424,6 +421,32 @@
     h5,
     h6 {
         font-family: "Gilroy-Bold";
+    }
+
+    a {
+        color: #4646ee;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    table {
+        margin-top: 20px;
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        @media (max-width: 576px) {
+            margin-top: 15px;
+        }
+        * {
+            border: 1px solid #c6cfdc;
+            padding: 5px 10px;
+        }
+        tr:first-child {
+            font-family: "Gilroy-Bold";
+            text-align: center;
+        }
     }
 }
 
