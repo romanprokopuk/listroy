@@ -893,18 +893,97 @@
 
 // --------------------------------------------------------------------------------- > photo, photo-ways
 
-.photo-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
-    @media (max-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
+.photo,
+.photo-ways {
+    .photo-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 576px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
-    @media (max-width: 576px) {
-        grid-template-columns: repeat(1, 1fr);
+
+    .photo-elem-img {
+        width: 100%;
+    }
+
+    .photo-elem-heading,
+    .photo-elem-text {
+        text-align: center;
+        font-family: "Gilroy-Bold";
+        font-size: 16px;
+        line-height: 19px;
+        color: #45484a;
+        @media (max-width: 992px) {
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+
+    .photo-elem-text {
+        font-family: "Gilroy-Regular";
     }
 }
 
-.photo-elem-img {
-    width: 100%;
+.photo-ways {
+    .photo-list {
+        grid-gap: 30px;
+    }
 }
+
+// --------------------------------------------------------------------------------- > attention
+
+.attention {
+    height: 380px;
+    position: relative;
+    background-color: #ebebeb;
+    @media (max-width: 1200px) {
+        height: 330px;
+    }
+    @media (max-width: 992px) {
+        height: 250px;
+    }
+    @media (max-width: 768px) {
+        height: 190px;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        background-image: url("../images/attention-img.png");
+        background-size: contain;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    }
+}
+
+.attention-heading {
+    width: 570px;
+    font-family: "Gilroy-Bold";
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #45484a;
+    @media (max-width: 992px) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    @media (max-width: 768px) {
+        width: 350px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    @media (max-width: 576px) {
+        width: 200px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+// --------------------------------------------------------------------------------- > scheme
+
