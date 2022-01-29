@@ -987,3 +987,122 @@
 
 // --------------------------------------------------------------------------------- > scheme
 
+.scheme-heading {
+    margin-bottom: 35px;
+    @media (max-width: 992px) {
+        margin-bottom: 25px;
+    }
+    @media (max-width: 576px) {
+        margin-bottom: 15px;
+    }
+}
+
+.scheme-list {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    margin: 0 auto;
+}
+
+
+// .scheme-list {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-gap: 30px;
+//     @media (max-width: 992px) {
+//         width: 355px;
+//         grid-template-columns: repeat(1, 1fr);
+//         margin: 0 auto;
+//     }
+//     @media (max-width: 576px) {
+//         width: 270px;
+//     }
+// }
+
+.scheme-elem {
+    display: flex;
+    position: relative;
+    width: 30%;
+    margin: 15px;
+}
+
+// .scheme-elem::after {
+//     position: absolute;
+//     display: block;
+//     width: 30px;
+//     height: 10px;
+//     right: -30px;
+//     top: 43%;
+//     background-image: url("../images/arrow-scheme.png");
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     content: "";
+// }
+
+// .scheme-elem:nth-child(3n)::after {
+//     right: 43%;
+//     top: auto;
+//     bottom: -20px;
+//     transform: rotate(90deg);
+// }
+
+// .scheme-elem::after {
+//     @media (max-width: 992px) {
+//         right: 43%;
+//         top: auto;
+//         bottom: -20px;
+//         transform: rotate(90deg);
+//     }
+// }
+
+// .scheme-elem__string-even::after {
+//     transform: rotate(180deg);
+//     @media (max-width: 992px) {
+//         transform: rotate(90deg);
+//     }
+// }
+
+// .scheme-elem:nth-last-child(1)::after {
+//     display: none;
+// }
+
+.scheme-number {
+    width: 60px;
+    height: 60px;
+    background-color: #dec1a0;
+    font-family: "Gilroy-Bold";
+    font-size: 40px;
+    line-height: 48px;
+    color: #fff;
+    @media (max-width: 992px) {
+        width: 50px;
+        height: 50px;
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
+.scheme-text {
+    width: calc(100% - 60px);
+    background-color: #f7f4f0;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: "Gilroy-Bold";
+    font-size: 16px;
+    line-height: 19px;
+    color: #45484a;
+    @media (max-width: 992px) {
+        width: calc(100% - 50px);
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+.scheme-number,
+.scheme-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
