@@ -167,11 +167,13 @@
     justify-content: center;
     width: 221px;
     height: 50px;
+    padding: 10px;
     border: 2px solid #987c66;
     border-radius: 2px;
     background-color: inherit;
     font-family: "Gilroy-Bold";
     font-size: 15px;
+    text-align: center;
     line-height: 19px;
     color: #987c66;
     &:hover {
@@ -985,6 +987,12 @@
     }
 }
 
+.attention-img {
+    img {
+        height: 100%;
+    }
+}
+
 // --------------------------------------------------------------------------------- > scheme
 
 .scheme-heading {
@@ -1018,10 +1026,14 @@
         width: 100%;
     }
     &:nth-child(4) {
-        order: 6;
+        @media (min-width: 992px) {
+            order: 6;
+        }
     }
     &:nth-child(5) {
-        order: 4;
+        @media (min-width: 992px) {
+            order: 4;
+        }
     }
 }
 
@@ -1060,7 +1072,15 @@
 }
 
 .scheme-elem:nth-child(4)::after {
-    display: none;
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+.scheme-elem:nth-last-child(1)::after {
+    @media (max-width: 992px) {
+        display: none;
+    }
 }
 
 .scheme-number {
