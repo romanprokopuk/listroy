@@ -1122,3 +1122,60 @@
     justify-content: center;
     text-align: center;
 }
+
+// --------------------------------------------------------------------------------- > terms
+
+.terms-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 15px;
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.terms-elem {
+    position: relative;
+    height: 175px;
+    background-color: #e8e2dc;
+}
+
+.terms-top {
+    padding: 15px;
+    width: 80%;
+    font-family: "Gilroy-Bold";
+    font-size: 16px;
+    line-height: 19px;
+    color: #45484a;
+    @media (max-width: 992px) {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+.terms-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 170px;
+    min-height: 40px;
+    padding: 5px;
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    text-align: center;
+    background-color: #987c66;
+}
+
+.terms-bottom-bold {
+    font-family: "Gilroy-Bold";
+}

@@ -1,0 +1,143 @@
+// design
+
+// --------------------------------------------------------------------------------- > design
+
+.design {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    @media (max-width: 992px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    @media (max-width: 576px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.text__design {
+    li {
+        margin-top: 10px;
+    }
+}
+
+.terms__design {
+    margin-top: 45px;
+    @media (max-width: 1200px) {
+        margin-top: 35px;
+    }
+}
+
+.terms-elem__measurement {
+    background: linear-gradient(90.37deg, #e8e2dc 1.53%, #e8e2dc 50%, rgba(232, 226, 220, 0) 80%),
+        url("../images/terms-elem-img-1.png") right no-repeat;
+    background-size: auto 100%;
+    @media (max-width: 1200px) {
+        background: linear-gradient(90.37deg, #e8e2dc 1.53%, #e8e2dc 60%, rgba(232, 226, 220, 0) 80%),
+            url("../images/terms-elem-img-1.png") right no-repeat;
+        background-size: auto 100%;
+    }
+    @media (max-width: 768px) {
+        background: linear-gradient(90.37deg, #e8e2dc 1.53%, #e8e2dc 65%, rgba(232, 226, 220, 0) 80%),
+            url("../images/terms-elem-img-1.png") right no-repeat;
+        background-size: auto 100%;
+    }
+    @media (max-width: 576px) {
+        background: linear-gradient(90.37deg, #e8e2dc 1.53%, #e8e2dc 50%, rgba(232, 226, 220, 0) 80%),
+            url("../images/terms-elem-img-1.png") right no-repeat;
+        background-size: auto 100%;
+    }
+}
+
+.terms-elem__visualization {
+    background: linear-gradient(90.37deg, #e8e2dc 1.53%, #e8e2dc 50%, rgba(232, 226, 220, 0) 80%),
+        url("../images/terms-elem-img-2.png") right no-repeat;
+    background-size: auto 100%;
+    @media (max-width: 1200px) {
+        background: linear-gradient(90.37deg, #e8e2dc 1.53%, #e8e2dc 60%, rgba(232, 226, 220, 0) 80%),
+            url("../images/terms-elem-img-2.png") right no-repeat;
+        background-size: auto 100%;
+    }
+    @media (max-width: 768px) {
+        background: linear-gradient(90.37deg, #e8e2dc 1.53%, #e8e2dc 65%, rgba(232, 226, 220, 0) 80%),
+            url("../images/terms-elem-img-2.png") right no-repeat;
+        background-size: auto 100%;
+    }
+    @media (max-width: 576px) {
+        background: linear-gradient(90.37deg, #e8e2dc 1.53%, #e8e2dc 50%, rgba(232, 226, 220, 0) 80%),
+            url("../images/terms-elem-img-2.png") right no-repeat;
+        background-size: auto 100%;
+    }
+}
+
+.terms-elem__album {
+    background: linear-gradient(90.37deg, #e8e2dc 1.53%, #e8e2dc 50%, rgba(232, 226, 220, 0) 80%),
+        url("../images/terms-elem-img-3.png") right no-repeat;
+    background-size: auto 100%;
+    @media (max-width: 1200px) {
+        background: linear-gradient(90.37deg, #e8e2dc 1.53%, #e8e2dc 60%, rgba(232, 226, 220, 0) 80%),
+            url("../images/terms-elem-img-3.png") right no-repeat;
+        background-size: auto 100%;
+    }
+    @media (max-width: 768px) {
+        background: linear-gradient(90.37deg, #e8e2dc 1.53%, #e8e2dc 65%, rgba(232, 226, 220, 0) 80%),
+            url("../images/terms-elem-img-3.png") right no-repeat;
+        background-size: auto 100%;
+    }
+    @media (max-width: 576px) {
+        background: linear-gradient(90.37deg, #e8e2dc 1.53%, #e8e2dc 50%, rgba(232, 226, 220, 0) 80%),
+            url("../images/terms-elem-img-3.png") right no-repeat;
+        background-size: auto 100%;
+    }
+}
+
+.attention__design {
+    height: auto;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    .container {
+        position: relative;
+        background-image: none;
+    }
+    @media (max-width: 1200px) {
+        margin-top: 35px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    @media (max-width: 768px) {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+}
+
+.text__design {
+    width: 75%;
+    z-index: 3;
+    @media (max-width: 992px) {
+        width: 65%;
+    }
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.attention-img__design {
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.photo__design-examples {
+    margin-top: 35px;
+    @media (max-width: 992px) {
+        margin-top: 25px;
+    }
+    @media (max-width: 576px) {
+        margin-top: 20px;
+    }
+}
