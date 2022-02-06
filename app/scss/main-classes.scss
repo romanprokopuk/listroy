@@ -347,7 +347,7 @@
     }
     @media (max-width: 768px) and (min-width: 575.999999px) {
         position: relative;
-        bottom: 135px;
+        bottom: 105px;
     }
 }
 
@@ -449,6 +449,10 @@
             font-family: "Gilroy-Bold";
             text-align: center;
         }
+    }
+
+    strong {
+        font-family: "Gilroy-Bold";
     }
 }
 

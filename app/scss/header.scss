@@ -71,13 +71,11 @@
 
 // --------------------------------------------------------------------------------- > portable-menu-wrap__contacts
 
-// portable-menu-wrap__contacts on/off
 .portable-menu-wrap__contacts {
-    display: none;
-}
-
-.portable-menu-wrap__contacts {
+    left: -200%;
+    overflow: hidden;
     z-index: 3;
+    transition: 0.4s;
 }
 
 .portable-menu {
@@ -162,10 +160,15 @@
 }
 
 // --------------------------------------------------------------------------------- > portable-menu-wrap__nav
-
-// portable-menu-wrap__nav on/off
 .portable-menu-wrap__nav {
-    display: none;
+    left: -200%;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.active {
+    left: 0;
+    transition: 0.4s;
 }
 
 .nav__portable-menu {
