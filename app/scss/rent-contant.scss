@@ -34,7 +34,7 @@
 
 .filter-wrap__mobile-active {
     @media (max-width: 992px) {
-        display: none; // filter-wrap__mobile-active on/off
+        display: none;
         position: fixed;
         height: 100vh;
         width: 50vw;
@@ -47,6 +47,10 @@
     @media (max-width: 768px) {
         width: 100vw;
     }
+}
+
+.switch {
+    display: block;
 }
 
 .to-close-btn__filter {

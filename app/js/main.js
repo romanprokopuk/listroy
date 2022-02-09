@@ -25,3 +25,15 @@ $('.to-close-btn').on('click', function(){
 $('.btn__portable-menu-call').on('click', function(){
     $('.portable-menu-wrap__contacts').removeClass('active');
 })
+
+$('.search-btn__header-top').on('click', function(){
+    $('.search__header-top').toggleClass('switch');
+})
+
+$('.btn__filter').on('click', function(){
+    $('.filter-wrap__mobile-active').toggleClass('switch');
+})
+
+$('.to-close-btn').on('click', function(){
+    $('.filter-wrap__mobile-active').removeClass('switch');
+})
