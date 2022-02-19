@@ -25,7 +25,8 @@
 
 .callback-contant {
     position: relative;
-    flex-grow: 1;
+    flex: none;
+    width: 30%;
     padding: 37px 34px;
     background-color: #f4f4f4;
     @media (max-width: 1200px) {
@@ -34,13 +35,18 @@
     @media (max-width: 768px) {
         padding: 0;
         padding-bottom: 33px;
+        width: auto;
+        flex-grow: 1;
     }
 }
 
 .map {
-    flex-grow: 7;
+    flex: none;
+    width: 70%;
     @media (max-width: 768px) {
         display: none;
+        width: auto;
+        flex-grow: 1;
     }
 }
 

@@ -15,6 +15,7 @@
 
 .rent-contant-wrap {
     position: relative;
+    min-height: 700px;
 }
 
 .filter-wrap {
@@ -24,6 +25,7 @@
     left: 0;
     padding: 32px 10px;
     background-color: #f8f8f8;
+    overflow-y: auto;
     @media (max-width: 1200px) {
         width: 30%;
     }
@@ -155,6 +157,7 @@
 }
 
 .equipment-elem {
+    position: relative;
     display: block;
     padding: 10px;
     border: 1px solid #d9d4d0;
@@ -189,6 +192,7 @@
 
 .equipment-description {
     margin-top: 20px;
+    margin-bottom: 46px;
     font-family: "Gilroy-Regular";
     font-size: 13px;
     line-height: 17px;
@@ -206,6 +210,14 @@
     line-height: 18px;
     color: #fff;
     background-color: #c0a484;
+}
+
+.btn__equipment {
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 10px;
 }
 
 .pagination__rent-contants {
