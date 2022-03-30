@@ -141,6 +141,12 @@
     }
 }
 
+.rotate {
+    &::before {
+        transform: rotate(180deg);
+    }
+}
+
 .equipment {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -200,7 +206,8 @@
 }
 
 .btn__equipment,
-.btn__filter-off {
+.btn__filter-off,
+.btn__filter-on {
     width: 168px;
     height: 36px;
     margin: 0 auto;

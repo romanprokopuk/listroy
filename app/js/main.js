@@ -37,3 +37,7 @@ $('.btn__filter').on('click', function(){
 $('.to-close-btn').on('click', function(){
     $('.filter-wrap__mobile-active').removeClass('switch');
 })
+
+$('.sort-elem__equipment').on('click', function(){
+    $('.sort-elem__equipment').toggleClass('rotate');
+})
